@@ -1,0 +1,55 @@
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.warning404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning404Txt {
+  font-size: 80px;
+  margin: 0px;
+  color: rgb(27, 102, 20);
+}
+
+.warningMsg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.warningText {
+  font-size: 32px;
+  color: rgb(27, 102, 20);
+}
+
+.warningText2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(27, 102, 20);
+  margin: 0px;
+}
+
+.warningIcon {
+  color: rgb(218, 233, 13);
+  font-size: 40px !important;
+}
+
+.arrowIcon {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 32px !important;
+  color: rgb(27, 102, 20);
+}
+
+.warningMsg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
