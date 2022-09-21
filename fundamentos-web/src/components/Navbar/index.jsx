@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./styles.css";
 import Hamburguer from "../../assets/images/burger_line_list_menu_nav_navigation_option_icon_123231 (1).png";
 import xxx from "../../assets/images/xxx.png";
+
 import { Link } from "react-router-dom";
 import {
   PeopleAltOutlined,
   ReportOutlined,
   StoreOutlined,
 } from "@mui/icons-material";
-
 const NavBar = () => {
   const [navBar, setNavbar] = useState(false);
 
@@ -26,7 +26,7 @@ const NavBar = () => {
             )}
           </div>
         </button>
-
+        <div className="nav-logo"></div>
         <nav className={`navbar ${navBar && "opened"}`}>
           <ul onClick={() => setNavbar(!navBar)} className="ul-menu">
             <li className="link-container">

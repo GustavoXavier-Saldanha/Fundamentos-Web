@@ -18,18 +18,12 @@ function App() {
         <NavBar  />
         <div className="container">
           <Routes>
-     <Route exact path="/">
-            <Home />
-          </Route>
-            <Route exact path="/About">
-              <About />
-            </Route>
-            <Route exact path="/Infos">
-              <Infos />
-            </Route>
-            <Route>
-              <Pagina404 />
-            </Route>
+     <Route exact path="/" element={<Home />}/>
+        <Route exact path="/" element={<About />}/>
+           <Route exact path="/" element={<Infos />}/>
+       <Route element={<Pagina404 />}/>
+
+
           </Routes>
         </div>
         <Rodape/>
