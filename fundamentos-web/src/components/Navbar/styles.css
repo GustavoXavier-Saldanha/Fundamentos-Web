@@ -3,7 +3,7 @@ nav {
   /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2); */
   height: 100%;
   width: 100%;
-  max-width: 350px;
+  max-width: 290px;
   position: fixed;
   transition: all 0.6s;
   left: -100%;
@@ -39,8 +39,8 @@ input[type="checkbox"] {
   margin-top: 5px;
 }
 
-.icon-red {
-  color: rgb(190, 15, 15);
+.icon-color {
+  color: rgb(29, 165, 132);
 }
 
 .icon-black {
@@ -63,15 +63,14 @@ input[type="checkbox"] {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  width: 90%;
+  width: 85%;
   height: 60px;
   cursor: pointer;
 }
 
 .nav-link:hover {
-  background-color: rgb(145, 145, 145);
   border-radius: 5px;
-  color: white;
+  color: rgb(185, 185, 185);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -119,15 +118,15 @@ input[type="checkbox"] {
 }
 
 .toggle-x-hover:hover {
-  margin-top: 6px;
-  margin-left: 8px;
-  width: 35px;
-  height: 35px;
+  margin-top: -2px;
+  margin-left: -2px;
+  width: 52px;
+  height: 52px;
 }
 
 .toggle-ham-hover:hover {
-  margin-top: -4px;
-  margin-left: -4px;
-  width: 53px;
-  height: 53px;
+  margin-top: -2px;
+  margin-left: -2px;
+  width: 52px;
+  height: 52px;
 }

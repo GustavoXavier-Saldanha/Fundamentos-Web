@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./styles.css";
-import Hamburguer from "../../assets/images/burger_line_list_menu_nav_navigation_option_icon_123231 (1).png";
-import xxx from "../../assets/images/xxx.png";
-
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
+import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import BiotechIcon from "@mui/icons-material/Biotech";
+import MedicalInformationIcon from "@mui/icons-material/MedicalInformation";
+import ArticleIcon from "@mui/icons-material/Article";
 import { Link } from "react-router-dom";
-import {
-  PeopleAltOutlined,
-  ReportOutlined,
-  StoreOutlined,
-} from "@mui/icons-material";
 const NavBar = () => {
   const [navBar, setNavbar] = useState(false);
 
@@ -19,10 +18,10 @@ const NavBar = () => {
           <div className="menu">
             {navBar ? (
               <div className="imgSizeBox">
-                <image className="img-size toggle-x-hover" src={xxx} />
+                <CloseIcon className=" toggle-x-hover" sx={{ fontSize: 50 }} />
               </div>
             ) : (
-              <image className="toggle-ham-hover" src={Hamburguer} />
+              <MenuIcon className="toggle-ham-hover" sx={{ fontSize: 50 }} />
             )}
           </div>
         </button>
@@ -30,27 +29,33 @@ const NavBar = () => {
         <nav className={`navbar ${navBar && "opened"}`}>
           <ul onClick={() => setNavbar(!navBar)} className="ul-menu">
             <li className="link-container">
-              <Link className="nav-link" to="/usuariosCadastrados">
-                <PeopleAltOutlined className="icon-menu icon-black" />
-                <p className="nav-text">Usuarios Cadastrados</p>
+              <Link className="nav-link" to="/">
+                <HomeIcon className="icon-menu icon-color" />
+                <p className="nav-text">Home</p>
               </Link>
             </li>
             <li className="link-container">
-              <Link className="nav-link" to="/usuariosDenunciados">
-                <ReportOutlined className="icon-menu icon-red" />
-                <p className="nav-text">Usuarios Denunciados</p>
+              <Link className="nav-link" to="/about">
+                <ArticleIcon className="icon-menu icon-color" />
+                <p className="nav-text">Sobre</p>
               </Link>
             </li>
             <li className="link-container">
-              <Link className="nav-link" to="/EstabelecimentosCadastrados">
-                <StoreOutlined className="icon-menu icon-black" />
-                <p className="nav-text">Estabelecimentos cadastrados</p>
+              <Link className="nav-link" to="/estatisticas">
+                <BiotechIcon className="icon-menu icon-color" />
+                <p className="nav-text">Estatísticas</p>
               </Link>
             </li>
             <li className="link-container">
-              <Link className="nav-link" to="/EstabelecimentosDenunciados">
-                <ReportOutlined className="icon-menu icon-red" />
-                <p className="nav-text">Estabelecimentos denunciados</p>
+              <Link className="nav-link" to="/infos">
+                <InfoIcon className="icon-menu icon-color" />
+                <p className="nav-text">Informações</p>
+              </Link>
+            </li>
+            <li className="link-container">
+              <Link className="nav-link" to="/contato">
+                <MedicalInformationIcon className="icon-menu icon-color" />
+                <p className="nav-text">Cuidados</p>
               </Link>
             </li>
           </ul>
