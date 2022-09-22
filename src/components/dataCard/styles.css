@@ -1,2 +1,19 @@
 .cardP {
+  background-color: rgb(29, 165, 132);
+}
+
+.cardP:hover {
+  background-color: rgb(28, 156, 124);
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
