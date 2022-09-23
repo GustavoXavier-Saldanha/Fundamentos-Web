@@ -103,13 +103,13 @@ const DataCard = ({ infos, name }) => {
           </div>
         </div>
         <CardActions>
-          <Button
+          {/* <Button
             size="small"
             target="_blank"
             href="https://www.google.com/search?sa=X&cs=0&sxsrf=ALiCzsYVGz7A-xWKUns4rYnKu_4WTSJJwg:1663872521033&q=Brasil&stick=H4sIAAAAAAAAAONgFuLQz9U3ME82zVECswxN04q0hJzz80oy81LzSkLynfNL80qKKhexsjkVJRZn5gAAgy0ONjMAAAA&ved=2ahUKEwip78SUiKn6AhXWt5UCHUCDA7sQxA16BAhJEAs&biw=1440&bih=789&dpr=1"
           >
             Saiba mais
-          </Button>
+          </Button> */}
         </CardActions>
       </Card>
     </>

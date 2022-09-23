@@ -28,6 +28,7 @@
 
 .sectionContainer p {
   margin: 5px;
+  color: black;
 }
 
 .sectionContainer a {
@@ -37,6 +38,7 @@
 .sectionContainer h3 {
   margin-top: 5px;
   margin-bottom: 5px;
+  color: black;
 }
 
 @media (max-width: 880px) {

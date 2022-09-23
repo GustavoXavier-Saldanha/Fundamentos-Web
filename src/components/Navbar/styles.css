@@ -70,7 +70,7 @@ input[type="checkbox"] {
 
 .nav-link:hover {
   border-radius: 5px;
-  color: rgb(185, 185, 185);
+  color: rgb(109, 109, 109);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
