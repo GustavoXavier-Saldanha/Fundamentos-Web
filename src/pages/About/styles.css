@@ -1,0 +1,40 @@
+.bodyTarget {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.bodyTargetContainer {
+  background-color: rgba(29, 165, 132, 0.05);
+  width: 90%;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(29, 165, 132, 0.1);
+}
+
+.bodyTargetContent {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 15px;
+}
+
+.sectionContainer p {
+  margin: 5px;
+}
+
+.sectionContainer a {
+  color: black;
+}
+
+.sectionContainer h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

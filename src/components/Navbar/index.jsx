@@ -35,17 +35,18 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="link-container">
-              <Link className="nav-link" to="/about">
-                <ArticleIcon className="icon-menu icon-color" />
-                <p className="nav-text">Sobre</p>
-              </Link>
-            </li>
-            <li className="link-container">
               <Link className="nav-link" to="/estatisticas">
                 <BiotechIcon className="icon-menu icon-color" />
                 <p className="nav-text">Estatísticas</p>
               </Link>
             </li>
+            <li className="link-container">
+              <Link className="nav-link" to="/about">
+                <ArticleIcon className="icon-menu icon-color" />
+                <p className="nav-text">Sobre</p>
+              </Link>
+            </li>
+
             <li className="link-container">
               <Link className="nav-link" to="/infos">
                 <InfoIcon className="icon-menu icon-color" />
@@ -53,7 +54,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="link-container">
-              <Link className="nav-link" to="/contato">
+              <Link className="nav-link" to="/cuidados">
                 <MedicalInformationIcon className="icon-menu icon-color" />
                 <p className="nav-text">Cuidados</p>
               </Link>
