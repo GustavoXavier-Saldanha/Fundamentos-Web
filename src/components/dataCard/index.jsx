@@ -2,24 +2,9 @@ import React from "react";
 import "./styles.css";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-const DataCard = ({ infos, name }) => {
-  // const Itens = () => {
-  //   return (
-  //     <Card variant="outlined" className="cardP">
-  //       <div>
-  //         <p>Brasil - {infos.abbreviation}</p>
-  //         <div>
-  //           <p>População:</p>
-  //           <p>{infos.population}</p>
-  //         </div>
-  //       </div>
-  //     </Card>
-  //   );
-  // };
-
+const DataCard = ({ infos }) => {
   return (
     <>
       <Card
@@ -31,49 +16,11 @@ const DataCard = ({ infos, name }) => {
         className="cardP"
       >
         <div className="infoCard">
-          <Typography gutterBottom variant="h4" component="div" color={"#fff"}>
-            {name === "GLOBAL"
-              ? name
-              : `${name} - ${infos.abbreviation ? infos.abbreviation : ""}`}
-          </Typography>
           <div className="bodyContent">
-            <div>
+            <div className="bodyInfo">
               <Typography
                 variant="body2"
-                color={"#fff"}
-                fontSize={18}
-                fontWeight={700}
-              >
-                População:
-              </Typography>
-              <Typography
-                variant="body2"
-                color={"#fff"}
-                fontSize={22}
-                marginBottom={2}
-              >
-                {infos.population
-                  ? infos.population.toLocaleString("pt-BR")
-                  : ""}
-              </Typography>
-              <Typography
-                variant="body2"
-                color={"#fff"}
-                fontSize={18}
-                fontWeight={700}
-              >
-                Extenção:
-              </Typography>
-              <Typography variant="body2" color={"#fff"} fontSize={22}>
-                {infos.sq_km_area
-                  ? `${infos.sq_km_area.toLocaleString("pt-BR")}m`
-                  : ""}
-              </Typography>
-            </div>
-            <div>
-              <Typography
-                variant="body2"
-                color={"#fff"}
+                color={"#EEEEEE"}
                 fontSize={18}
                 fontWeight={700}
               >
@@ -82,7 +29,8 @@ const DataCard = ({ infos, name }) => {
               <Typography
                 variant="body2"
                 color={"#fff"}
-                fontSize={22}
+                fontSize={36}
+                fontWeight={800}
                 marginBottom={2}
               >
                 {infos.confirmed ? infos.confirmed.toLocaleString("pt-BR") : ""}
@@ -90,13 +38,18 @@ const DataCard = ({ infos, name }) => {
 
               <Typography
                 variant="body2"
-                color={"#fff"}
+                color={"#EEEEEE"}
                 fontSize={18}
                 fontWeight={700}
               >
                 Total de mortes:
               </Typography>
-              <Typography variant="body2" color={"#fff"} fontSize={22}>
+              <Typography
+                variant="body2"
+                color={"#fff"}
+                fontSize={36}
+                fontWeight={800}
+              >
                 {infos.deaths ? infos.deaths.toLocaleString("pt-BR") : ""}
               </Typography>
             </div>
