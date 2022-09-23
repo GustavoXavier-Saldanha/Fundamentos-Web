@@ -25,7 +25,12 @@ const NavBar = () => {
             )}
           </div>
         </button>
-        <div className="nav-logo"></div>
+        <div className="nav-logo">
+          <h2 className="navBarTxt1">SAÚDE</h2>
+          <div className="navBar1" />
+          <div className="navBar2" />
+          <h2 className="navBarTxt2">CORONAVÍRUS</h2>
+        </div>
         <nav className={`navbar ${navBar && "opened"}`}>
           <ul onClick={() => setNavbar(!navBar)} className="ul-menu">
             <li className="link-container">

@@ -104,6 +104,7 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   justify-content: center;
+
   position: fixed;
   z-index: 200;
   top: 0px;
@@ -129,4 +130,33 @@ input[type="checkbox"] {
   margin-left: -2px;
   width: 52px;
   height: 52px;
+}
+
+.navBar1 {
+  width: 4px;
+  height: 25px;
+  background-color: rgb(207, 204, 18);
+  transform: rotate(15deg);
+  margin: 4px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.navBar2 {
+  width: 4px;
+  height: 25px;
+  transform: rotate(15deg);
+  border-radius: 10px;
+  background-color: rgb(33, 197, 96);
+  margin: 4px;
+  margin-right: 10px;
+}
+
+.navBarTxt1 {
+  color: rgb(29, 165, 132);
+}
+
+.navBarTxt2 {
+  color: rgb(129, 131, 130);
+  font-weight: 500;
 }
