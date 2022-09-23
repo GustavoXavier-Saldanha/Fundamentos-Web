@@ -38,3 +38,24 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+@media (max-width: 880px) {
+  .bodyTargetContent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 755px) {
+  .bodyTargetContent {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .bodyTargetContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -55,7 +55,7 @@ const Home = () => {
     <div className="container">
       <div className="content">
         <div className="titleContent">
-          <h2 className="pageTitle">Painel Coronavírus - Global</h2>
+          <h1 className="pageTitle">Painel Coronavírus - Global</h1>
           <p className="pageTitleDate">
             Atualizado em: {updateData ? formatData(updateData) : ""}
           </p>

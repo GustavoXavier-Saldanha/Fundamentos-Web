@@ -5,7 +5,7 @@ const Infos = () => {
     <div className="container">
       <div className="content">
         <div className="titleContent">
-          <h2 className="pageTitle">Painel Coronavírus - Informações</h2>
+          <h1 className="pageTitle">Painel Coronavírus - Informações</h1>
         </div>
       </div>
 
