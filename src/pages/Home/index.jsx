@@ -26,30 +26,12 @@ const Stats = () => {
     buscaData();
   }, []);
 
-  const formatData = (data) => {
-    let hour = data.slice(11, 16);
-    const date = new Date(data);
-    const year = date.getFullYear();
-    let month = date.getMonth() + 1;
-    let dt = date.getDate();
-
-    if (dt < 10) {
-      dt = "0" + dt;
-    }
-    if (month < 10) {
-      month = "0" + month;
-    }
-
-    return `${dt}/${month}/${year} `;
-  };
   return (
     <div className="container">
       <div className="content">
         <div className="titleContent">
           <h1 className="pageTitle">Painel Coronavírus - Brasil</h1>
-          {/* <p className="pageTitleDate">
-            Atualizado em: {updateData ? formatData(updateData) : ""}
-          </p> */}
+          <p className="pageTitleDate">Dados atualizados</p>
         </div>
       </div>
       <div className="cardsBody">

@@ -19,3 +19,48 @@
 .statsContentPie {
   width: 30%;
 }
+
+@media (max-width: 1433px) {
+  .statsContentPie {
+    width: 50%;
+  }
+  .statsContainerPie p {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .statsContentPie {
+    width: 55%;
+  }
+  .statsContainerPie p {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .statsContentPie {
+    width: 65%;
+  }
+  .statsContainerPie p {
+    width: 75%;
+  }
+}
+
+@media (max-width: 550px) {
+  .statsContentPie {
+    width: 80%;
+  }
+  .statsContainerPie p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 405px) {
+  .statsContentPie {
+    width: 90%;
+  }
+  .statsContainerPie p {
+    width: 95%;
+  }
+}

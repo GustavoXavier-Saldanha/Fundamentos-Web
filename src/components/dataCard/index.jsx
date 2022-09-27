@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 
 const DataCard = ({ infos }) => {
@@ -12,6 +11,15 @@ const DataCard = ({ infos }) => {
           width: 345,
           backgroundColor: "rgb(29, 165, 132) ",
           margin: "20px",
+          "@media (max-width: 420px)": {
+            width: `90%`,
+          },
+          "@media (max-width: 420px)": {
+            width: `90%`,
+            margin: "0px",
+            marginTop: "10px",
+            marginBottom: "10px",
+          },
         }}
         className="cardP"
       >
@@ -55,15 +63,6 @@ const DataCard = ({ infos }) => {
             </div>
           </div>
         </div>
-        <CardActions>
-          {/* <Button
-            size="small"
-            target="_blank"
-            href="https://www.google.com/search?sa=X&cs=0&sxsrf=ALiCzsYVGz7A-xWKUns4rYnKu_4WTSJJwg:1663872521033&q=Brasil&stick=H4sIAAAAAAAAAONgFuLQz9U3ME82zVECswxN04q0hJzz80oy81LzSkLynfNL80qKKhexsjkVJRZn5gAAgy0ONjMAAAA&ved=2ahUKEwip78SUiKn6AhXWt5UCHUCDA7sQxA16BAhJEAs&biw=1440&bih=789&dpr=1"
-          >
-            Saiba mais
-          </Button> */}
-        </CardActions>
       </Card>
     </>
   );
