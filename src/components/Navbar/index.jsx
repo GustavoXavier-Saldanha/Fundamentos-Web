@@ -46,14 +46,14 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="link-container">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/sobre">
                 <ArticleIcon className="icon-menu icon-color" />
                 <p className="nav-text">Sobre</p>
               </Link>
             </li>
 
             <li className="link-container">
-              <Link className="nav-link" to="/infos">
+              <Link className="nav-link" to="/informacoes">
                 <InfoIcon className="icon-menu icon-color" />
                 <p className="nav-text">Informações</p>
               </Link>

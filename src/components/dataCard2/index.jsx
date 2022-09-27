@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 
-const DataCard = ({ infos }) => {
+const DataCard2 = ({ infos }) => {
   return (
     <>
       <Card
@@ -24,7 +24,7 @@ const DataCard = ({ infos }) => {
                 fontSize={18}
                 fontWeight={700}
               >
-                Casos recuperados:
+                Casos confirmados:
               </Typography>
               <Typography
                 variant="body2"
@@ -33,7 +33,7 @@ const DataCard = ({ infos }) => {
                 fontWeight={800}
                 marginBottom={2}
               >
-                {infos.recovered ? infos.recovered.toLocaleString("pt-BR") : ""}
+                {infos.cases ? infos.cases.toLocaleString("pt-BR") : ""}
               </Typography>
 
               <Typography
@@ -42,7 +42,7 @@ const DataCard = ({ infos }) => {
                 fontSize={18}
                 fontWeight={700}
               >
-                Testes de COVID-19:
+                Total de mortes:
               </Typography>
               <Typography
                 variant="body2"
@@ -50,7 +50,7 @@ const DataCard = ({ infos }) => {
                 fontSize={36}
                 fontWeight={800}
               >
-                {infos.tests ? infos.tests.toLocaleString("pt-BR") : ""}
+                {infos.deaths ? infos.deaths.toLocaleString("pt-BR") : ""}
               </Typography>
             </div>
           </div>
@@ -68,4 +68,4 @@ const DataCard = ({ infos }) => {
     </>
   );
 };
-export default DataCard;
+export default DataCard2;

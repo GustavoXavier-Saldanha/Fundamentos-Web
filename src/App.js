@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Infos from './pages/Infos';
 import Cuidados from './pages/Cuidados';
+import Stats from './pages/Stats';
 import Pagina404 from './pages/Pagina404';
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
         <div className="container">
           <Routes>
           <Route exact path="/" element={<Home />}/>
-          <Route exact path="/about" element={<About />}/>
-          <Route exact path="/infos" element={<Infos />}/>
+          <Route exact path="/estatisticas" element={<Stats />}/>
+          <Route exact path="/sobre" element={<About />}/>
+          <Route exact path="/informacoes" element={<Infos />}/>
           <Route exact path="/cuidados" element={<Cuidados />}/>
           <Route element={<Pagina404 />}/>
           </Routes>
