@@ -40,7 +40,7 @@ input[type="checkbox"] {
 }
 
 .icon-color {
-  color: rgb(29, 165, 132);
+  color: #0a661e;
 }
 
 .icon-black {
@@ -70,7 +70,7 @@ input[type="checkbox"] {
 
 .nav-link:hover {
   border-radius: 5px;
-  color: rgb(109, 109, 109);
+  color: rgb(94, 94, 94);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -141,7 +141,7 @@ input[type="checkbox"] {
 .navBar1 {
   width: 4px;
   height: 25px;
-  background-color: rgb(207, 204, 18);
+  background-color: #dfdf01;
   transform: rotate(15deg);
   margin: 4px;
   margin-left: 10px;
@@ -153,17 +153,17 @@ input[type="checkbox"] {
   height: 25px;
   transform: rotate(15deg);
   border-radius: 10px;
-  background-color: rgb(33, 197, 96);
+  background-color: #0a661e;
   margin: 4px;
   margin-right: 10px;
 }
 
 .navBarTxt1 {
-  color: rgb(29, 165, 132);
+  color: #0a661e;
 }
 
 .navBarTxt2 {
-  color: rgb(129, 131, 130);
+  color: rgb(0, 0, 0);
   font-weight: 500;
 }
 

@@ -4,7 +4,9 @@ Este projeto foi desenvolvido por Gustavo Xavier para o teste de proficiência n
 
 ## Projeto disponível a seguir:
 
-O deploy do projeto foi feito utilizandoa plataforma da `Versel`[https://vercel.com/](https://vercel.com/) :
+O deploy do projeto foi feito utilizandoa plataforma da `Versel`[https://vercel.com/](https://vercel.com/).
+
+O link do site é: `fundamentos-web`[https://fundamentos-web-jytz.vercel.app/](https://fundamentos-web-jytz.vercel.app/)
 
 ## Decisões do Projeto:
 

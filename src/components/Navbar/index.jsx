@@ -19,6 +19,7 @@ const NavBar = () => {
             Ir para o conteúdo principal
           </a>
           <button
+            aria-label="Menu lateral"
             onClick={() => setNavbar(!navBar)}
             className="menu hamb-button"
           >

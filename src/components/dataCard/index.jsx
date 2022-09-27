@@ -9,7 +9,7 @@ const DataCard = ({ infos }) => {
       <Card
         sx={{
           width: 345,
-          backgroundColor: "rgb(29, 165, 132) ",
+          backgroundColor: "#094b17",
           margin: "20px",
           "@media (max-width: 420px)": {
             width: `90%`,

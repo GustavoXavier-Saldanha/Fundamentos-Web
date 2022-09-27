@@ -1,9 +1,9 @@
 .cardP {
-  background-color: rgb(29, 165, 132);
+  background-color: #0a661e;
 }
 
 .cardP:hover {
-  background-color: rgb(28, 156, 124);
+  background-color: #073812;
 }
 
 .infoCard {
