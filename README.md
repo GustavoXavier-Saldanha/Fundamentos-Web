@@ -6,6 +6,10 @@ Este projeto foi desenvolvido por Gustavo Xavier para o teste de proficiência n
 
 O deploy do projeto foi feito utilizandoa plataforma da `Versel`[https://vercel.com/](https://vercel.com/).
 
+Fluxo de telas: `Fluxo`[https://www.canva.com/design/DAFNZjxb1YE/fxsAC6o5aq6mq2qGRq60mA/view?utm_content=DAFNZjxb1YE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAFNZjxb1YE/fxsAC6o5aq6mq2qGRq60mA/view?utm_content=DAFNZjxb1YE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+
+Wireframe: `Design`[https://www.canva.com/design/DAFNYTk7nu8/YWgOxGYLI02niu8j0sa6qg/view?utm_content=DAFNYTk7nu8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAFNYTk7nu8/YWgOxGYLI02niu8j0sa6qg/view?utm_content=DAFNYTk7nu8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+
 O link do site é: `fundamentos-web`[https://fundamentos-web-jytz.vercel.app/](https://fundamentos-web-jytz.vercel.app/)
 
 ## Decisões do Projeto:
