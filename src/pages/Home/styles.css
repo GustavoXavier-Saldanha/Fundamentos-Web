@@ -107,3 +107,16 @@
     font-size: 22px;
   }
 }
+
+.contentLink {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: transparent;
+  z-index: 1000;
+}
+
+.contentLink:focus {
+  color: black;
+  text-decoration: none;
+}

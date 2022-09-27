@@ -14,23 +14,34 @@ const NavBar = () => {
   const Itens = () => {
     return (
       <>
-        <button onClick={() => setNavbar(!navBar)} className="menu hamb-button">
-          <div className="menu">
-            {navBar ? (
-              <div className="imgSizeBox">
-                <CloseIcon className=" toggle-x-hover" sx={{ fontSize: 50 }} />
-              </div>
-            ) : (
-              <MenuIcon className="toggle-ham-hover" sx={{ fontSize: 50 }} />
-            )}
+        <header>
+          <a href="#content" className="contentLink">
+            Ir para o conteúdo principal
+          </a>
+          <button
+            onClick={() => setNavbar(!navBar)}
+            className="menu hamb-button"
+          >
+            <div className="menu">
+              {navBar ? (
+                <div className="imgSizeBox">
+                  <CloseIcon
+                    className=" toggle-x-hover"
+                    sx={{ fontSize: 50 }}
+                  />
+                </div>
+              ) : (
+                <MenuIcon className="toggle-ham-hover" sx={{ fontSize: 50 }} />
+              )}
+            </div>
+          </button>
+          <div className="nav-logo">
+            <h2 className="navBarTxt1">SAÚDE</h2>
+            <div className="navBar1" />
+            <div className="navBar2" />
+            <h2 className="navBarTxt2">CORONAVÍRUS</h2>
           </div>
-        </button>
-        <div className="nav-logo">
-          <h2 className="navBarTxt1">SAÚDE</h2>
-          <div className="navBar1" />
-          <div className="navBar2" />
-          <h2 className="navBarTxt2">CORONAVÍRUS</h2>
-        </div>
+        </header>
         <nav className={`navbar ${navBar && "opened"}`}>
           <ul onClick={() => setNavbar(!navBar)} className="ul-menu">
             <li className="link-container">

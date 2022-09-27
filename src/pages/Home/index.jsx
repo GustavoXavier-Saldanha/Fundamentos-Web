@@ -34,7 +34,7 @@ const Stats = () => {
           <p className="pageTitleDate">Dados atualizados</p>
         </div>
       </div>
-      <div className="cardsBody">
+      <main className="cardsBody">
         <div className="cardsContainer">
           <div className="cardsBox">
             <DataCard2 infos={brazilData} />
@@ -131,7 +131,7 @@ const Stats = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 };
