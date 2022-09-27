@@ -61,12 +61,8 @@ const About = () => {
             <div className="sectionContainer">
               <h3>Fonte:</h3>
               <p>
-                A aplicação foi desenvolvida utilizando como fonte a api{" "}
-                <a href="https://github.com/M-Media-Group/Covid-19-API">
-                  Covid-19-API
-                </a>
-                do grupo{" "}
-                <a href="https://github.com/M-Media-Group">M-Media-Goup.</a>
+                A aplicação foi desenvolvida utilizando como fonte as APIs{" "}
+                <a href="https://disease.sh/docs/#/">disease.sh.</a>
               </p>
               <p>
                 A API destina-se a desenvolvedores, máquinas, programas e outros

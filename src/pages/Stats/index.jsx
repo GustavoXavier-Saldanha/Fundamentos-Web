@@ -11,9 +11,9 @@ import {
   Tooltip,
   Legend,
   ArcElement,
+  PointElement,
+  LineElement,
 } from "chart.js";
-
-import { Bar } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -22,11 +22,15 @@ ChartJS.register(
   Title,
   Tooltip,
   ArcElement,
-  Legend
+  Legend,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement
 );
 const Stats = () => {
-  const [brazilData, setBrazilData] = useState({});
   const [brazilDataPie, setBrazilDataPie] = useState({});
+
   const [dataPie, setDataPie] = useState({
     labels: ["Casos", "Mortes", "Recuperados"],
     datasets: [
@@ -49,21 +53,6 @@ const Stats = () => {
   });
 
   useEffect(() => {
-    const buscaData = async () => {
-      await axios
-        .get(`https://covid-api.mmediagroup.fr/v1/cases?country=Brazil`)
-        .then((response) => {
-          let res = response.data;
-          console.log("RES", res);
-
-          setBrazilData(res);
-        })
-        .catch((error) => {
-          console.log("teste", error);
-        });
-    };
-
-    buscaData();
     const buscaDataPie = async () => {
       await axios
         .get(`https://disease.sh/v3/covid-19/countries/brazil`)
@@ -87,9 +76,9 @@ const Stats = () => {
         {
           label: "Covid-19 Infos",
           data: [
-            brazilDataPie.cases ? brazilDataPie.cases : 2,
-            brazilDataPie.deaths ? brazilDataPie.deaths : 3,
-            brazilDataPie.recovered ? brazilDataPie.recovered : 4,
+            brazilDataPie.cases ? brazilDataPie.cases : 0,
+            brazilDataPie.deaths ? brazilDataPie.deaths : 0,
+            brazilDataPie.recovered ? brazilDataPie.recovered : 0,
           ],
           backgroundColor: [
             "rgba(255, 99, 132, 0.2)",
@@ -106,53 +95,6 @@ const Stats = () => {
       ],
     });
   }, [brazilDataPie]);
-
-  console.log("TRANSFORM", Object.values(brazilData));
-
-  const objectArray = Object.entries(brazilData);
-
-  objectArray.forEach(([key, value]) => {
-    console.log(key); // 'one'
-    console.log(value.confirmed); // 1
-  });
-
-  // const data = {
-  //   labels,
-  //   datasets: [
-  //     {
-  //       label: objectArray.forEach(([key, value]) => {
-  //         return key; // 1
-  //       }),
-  //       // data: labels.map(() =>
-  //       //   objectArray
-  //       //     .forEach(([key, value]) => {
-  //       //       console.log(key); // 'one'
-  //       //       return value.confirmed; // 1
-  //       //     })
-  //       //     .datatype.number({ min: 0, max: 40000 })
-  //       // ),
-  //       backgroundColor: "rgba(255, 99, 132, 0.5)",
-  //     },
-  //     // {
-  //     //   label: "Dataset 2",
-  //     //   data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-  //     //   backgroundColor: "rgba(53, 162, 235, 0.5)",
-  //     // },
-  //   ],
-  // };
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "top",
-      },
-      title: {
-        display: true,
-        text: "Número de confirmados por estado",
-      },
-    },
-  };
 
   const optionsPie = {
     responsive: true,
@@ -172,14 +114,19 @@ const Stats = () => {
       <div className="content">
         <div className="titleContent">
           <h1 className="pageTitle">Painel Coronavírus - Brasil</h1>
-          <p className="pageTitleDate"></p>
+          <p className="pageTitleDate">Estatísticas</p>
         </div>
       </div>
       <div className="statsContainerPie">
-        <Pie data={dataPie} options={optionsPie} />
-      </div>
-      <div className="statsContainer">
-        {/* <Bar options={options} data={data} /> */}
+        <p>
+          O gráfico a seguir representa a relação entre os casos de COVID-19, as
+          pessoas que conseguiram se recuperar do vírus e as mortes causadas
+          pelo mesmo. Todas as informações contidas no gráfico são obtidas
+          exclusivamente no Brasil.
+        </p>
+        <div className="statsContentPie">
+          <Pie data={dataPie} options={optionsPie} />
+        </div>
       </div>
     </div>
   );

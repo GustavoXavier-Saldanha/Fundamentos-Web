@@ -3,5 +3,19 @@
 }
 
 .statsContainerPie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.statsContainerPie p {
+  color: black;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.statsContentPie {
   width: 30%;
 }
