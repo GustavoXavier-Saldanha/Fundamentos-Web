@@ -6,6 +6,9 @@ import { Warning, ArrowForward } from "@mui/icons-material";
 const Pagina404 = () => {
   return (
     <div className="notFound">
+      <a href="#content" className="contentLink">
+        Ir para o conteúdo principal
+      </a>
       <div>
         <div className="warning404">
           <h3 className="warning404Txt">404</h3>

@@ -15,7 +15,7 @@ const NavBar = () => {
     return (
       <>
         <header>
-          <a href="#content" className="contentLink">
+          <a href="#content" className="contentLinkNav">
             Ir para o conteúdo principal
           </a>
           <button

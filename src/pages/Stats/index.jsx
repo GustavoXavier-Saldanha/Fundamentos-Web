@@ -111,6 +111,9 @@ const Stats = () => {
 
   return (
     <div className="container">
+      <a href="#content" className="contentLink">
+        Ir para o conteúdo principal
+      </a>
       <div className="content">
         <div className="titleContent">
           <h1 className="pageTitle">Painel Coronavírus - Brasil</h1>
