@@ -31,7 +31,7 @@ const Stats = () => {
       <a href="#content" className="contentLink">
         Ir para o conteúdo principal
       </a>
-      <div className="content">
+      <div className="content" id="content">
         <div className="titleContent">
           <h1 className="pageTitle">Painel Coronavírus - Brasil</h1>
           <p className="pageTitleDate">Dados atualizados</p>

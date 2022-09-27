@@ -12,7 +12,7 @@ const Cuidados = () => {
         </div>
       </div>
 
-      <div className="bodyTarget">
+      <div className="bodyTarget" id="content">
         <div className="bodyTargetContainer">
           <div className="bodyTargetContent">
             <div className="sectionContainer">

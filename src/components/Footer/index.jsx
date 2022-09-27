@@ -2,8 +2,15 @@ import "./styles.css";
 
 const Rodape = () => {
   return (
-    <footer className="my-5 pt-5 text-muted text-center text-small">
-      <p className="mb-1">&copy; 2022 Gustavo Xavier Saldanha - CEFET-RJ</p>
+    <footer>
+      <a
+        style={{ textDecoration: "none", color: "#000" }}
+        href="https://www.linkedin.com/in/gustavo-xavier-saldanha-869b6a203"
+        target="_blank"
+        rel="noreferrer"
+      >
+        &copy; 2022 Gustavo Xavier Saldanha - CEFET-RJ
+      </a>
     </footer>
   );
 };

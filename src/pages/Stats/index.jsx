@@ -120,7 +120,7 @@ const Stats = () => {
           <p className="pageTitleDate">Estatísticas</p>
         </div>
       </div>
-      <div className="statsContainerPie">
+      <div className="statsContainerPie" id="content">
         <p>
           O gráfico a seguir representa a relação entre os casos de COVID-19, as
           pessoas que conseguiram se recuperar do vírus e as mortes causadas

@@ -9,7 +9,7 @@ const Pagina404 = () => {
       <a href="#content" className="contentLink">
         Ir para o conteúdo principal
       </a>
-      <div>
+      <div id="content">
         <div className="warning404">
           <h3 className="warning404Txt">404</h3>
         </div>

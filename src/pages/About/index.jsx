@@ -9,10 +9,11 @@ const About = () => {
       <div className="content">
         <div className="titleContent">
           <h1 className="pageTitle">Painel Coronavírus - Sobre</h1>
+          <p className="pageTitleDate">Dados atualizados</p>
         </div>
       </div>
 
-      <main className="bodyTarget">
+      <main className="bodyTarget" id="content">
         <div className="bodyTargetContainer">
           <div className="bodyTargetContent">
             <div className="sectionContainer">
