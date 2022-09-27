@@ -1,0 +1,48 @@
+.sectionCardsContainer {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cardsRedirect {
+  width: 345px;
+  height: 200px;
+  background-color: rgb(233, 233, 233);
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.cardsRedirect h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cardsRedirect p {
+  margin: 0px;
+  width: 90%;
+}
+
+.cardsRedirectButton {
+  width: 90%;
+  height: 50px;
+  text-align: center;
+  background-color: #0a661e;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

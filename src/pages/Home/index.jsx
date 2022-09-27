@@ -4,11 +4,38 @@ import axios from "axios";
 import DataCard from "../../components/dataCard";
 import DataCard2 from "../../components/dataCard2";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
+import SectionCard from "../../components/sectionCard";
 
 const Stats = () => {
   const [brazilData, setBrazilData] = useState({});
 
-  const [updateData, setUpdateData] = useState("");
+  const sectionInfos = [
+    {
+      title: "Estatísticas",
+      route: "/estatisticas",
+      label:
+        "Seção para melhor visualização entre dados de casos registrados, casos recuperados e mortes causadas pelo vírus.",
+    },
+    {
+      title: "Sobre",
+      route: "/sobre",
+      label:
+        "Temos informações com maior detalhamento e mostrando outras fontes para maiores informações.",
+    },
+    {
+      title: "Informações",
+      route: "/informacoes",
+      label:
+        "A seção de informação descreve melhor os sintomas e fornece mais informações do vírus.",
+    },
+    {
+      title: "Cuidados",
+      route: "/cuidados",
+      label:
+        "Em cuidados é possível obter maiores informações das atitudes necessárias para maior proteção.",
+    },
+  ];
 
   useEffect(() => {
     const buscaData = async () => {
@@ -67,7 +94,7 @@ const Stats = () => {
                 fontSize={18}
                 fontWeight={700}
               >
-                Mortes a cada 1 milhão de pessoas:
+                Mortes por milhão:
               </Typography>
               <Typography
                 variant="body2"
@@ -133,6 +160,11 @@ const Stats = () => {
               </Typography>
             </div>
           </div>
+        </div>
+        <div className="sectionCardsContainer">
+          {sectionInfos.map((e) => {
+            return <SectionCard infos={e} />;
+          })}
         </div>
       </main>
     </div>

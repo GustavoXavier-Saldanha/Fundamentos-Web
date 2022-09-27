@@ -90,12 +90,6 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 540px) {
-  .cardsBox {
-    justify-content: center;
-  }
-}
-
 @media (max-width: 700px) {
   .pageTitle {
     font-size: 26px;
