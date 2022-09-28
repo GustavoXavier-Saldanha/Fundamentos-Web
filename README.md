@@ -14,8 +14,17 @@ O link do site é: `fundamentos-web`[https://fundamentos-web-jytz.vercel.app/](h
 
 ## Decisões do Projeto:
 
-O projeto realizado foi desenvolvido com a temática baseada na terceira ODS ( Objetivo de Desenvolvimento sustentável), sobre saúde e bem-estar. Logo, comecei as pesquisas para encontrar a API que encaixaria no tema. Com o decorrer das pesquisas encontrei dificuldades em encontrar APIs que tinham um objetivo mais generalista acerca do tema escolhido.
-Contudo, achei válido ser mais específico dentro do assunto, por isso selecionei uma API que retorna dados sobre todos os países, regiões, histórico, entre outros. Com os diversos dados retornados, como os casos confirmados, total de mortos, população total, entre outros foi possível desenvolver uma aplicação completa acerca do tema. Por isso achei válido desenvolver diferentes páginas na aplicação, cada uma falando sobre uma parte do assunto, com informativos, gráficos e dados da API.
+O projeto realizado foi desenvolvido com a temática baseada na terceira ODS ( Objetivo 
+de Desenvolvimento sustentável), sobre saúde e bem-estar. Logo, comecei as pesquisas para 
+encontrar a API que encaixaria no tema. Com o decorrer das pesquisas encontrei dificuldades 
+em encontrar APIs que tinham um objetivo mais generalista acerca do tema escolhido.
+
+Contudo, achei válido ser mais específico dentro do assunto, por isso selecionei uma API 
+que retorna dados sobre o Coronavírus em vários os países, regiões, histórico, entre outros. Com os diversos dados
+retornados, como os casos confirmados, total de mortos, população total, entre outros foi 
+possível desenvolver uma aplicação completa acerca do tema. Por isso achei válido desenvolver
+diferentes páginas na aplicação, cada uma falando sobre uma parte do assunto, com 
+informativos, gráficos e dados da API.
 
 ### `yarn start`
 
